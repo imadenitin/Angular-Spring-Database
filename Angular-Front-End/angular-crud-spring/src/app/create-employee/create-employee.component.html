@@ -1,0 +1,26 @@
+<section>
+    <div class="container col-sm-5 py-3 align-center">
+        <div class="card">
+            <div class="card-header text-center"><h3>Create Employee</h3></div>
+            <div class="card-body">
+                <form [formGroup]="createEmployeeForm">
+                    <div class="form-group">
+                        <label for="firstname">FIRST Name</label>
+                        <input type="text" class="form-control" formControlName="firstName" id="firstname" placeholder="Enter firstname" >
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">LAST NAME</label>
+                        <input type="text" class="form-control" formControlName="lastName" id="lastname" placeholder="Enter lastname">
+                    </div>
+                    <div class="form-group">
+                        <label for="fee">EMAIL ID</label>
+                        <input type="email" class="form-control" formControlName="emailId" id="email" placeholder="Enter email" >
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer">
+                <button type="button" class="btn btn-primary" (click)="submit()">Create Employee</button>
+            </div>
+        </div>
+    </div>
+</section>
